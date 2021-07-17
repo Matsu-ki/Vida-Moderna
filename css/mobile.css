@@ -1,0 +1,105 @@
+@media only screen and (max-width: 800px){
+    #modelos .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    #cabecalho .container{
+        display: block;
+        padding-top: 15px 0;
+        position: relative;
+    }
+ 
+    #cabecalho #menu ul li{
+        display: block;
+        border-bottom: 1px solid #666;
+    }
+ 
+    #cabecalho #menu ul li a{
+        text-align: center;
+        border-bottom: 1px solid #666;
+    }
+ 
+    #cabecalho #menu ul li a:last-child{
+     border-top: 1px solid #666; 
+    }
+ 
+    #cabecalho #logo{
+        display: block;
+        margin: 0 auto;
+    }
+ 
+    #cabecalho #but-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+ 
+    #cabecalho #menu{
+        display: none;
+        margin-top: 15px;
+    }
+
+    #rodape{
+        position: relative;
+        bottom: -1300px;
+        background-color: black;
+        padding: 50px;
+        margin-top: 10px;
+    }
+    .r-text{
+        max-width: 1200px;
+        margin: -30px auto 0;
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+    }
+    #popup{
+        font-family: 'Poppins';
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 300px;
+        padding: 70px;
+        box-sizing: 0 5px 30px rgba(0,0,0,.30);
+        background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    #conectar {
+        max-width: 1200px;
+        margin: -30px auto 0;
+        position: absolute;
+        top: 200%;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+    }
+    .container-r{
+        position: relative;
+        width: 50px;
+        right: 40%;
+        height: 300px;
+        margin: 40px auto;
+        margin-bottom: -600px;
+    }
+    .container-r .box{
+        position: relative;
+       /* width: calc(200px - 30px);
+        height: calc(300px - 30px);*/
+        left: 10px;
+        max-width: 300px;
+        max-height: 300px;
+        background: rgb(250, 250, 250);
+        float: left;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}

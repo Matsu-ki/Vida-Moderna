@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" href="img/20210128_203951.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVNn" crossorigin="anonymous">
+    <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="moderna/bxslider/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="moderna/bxslider/jquery.bxslider.js"></script>
+
+    <title>Brasil Vida Moderna</title>
+
+    <script>
+        $(document).ready(function(){
+        $('#slider').bxSlider({
+            auto: false,
+            controls: false,
+        });
+        
+    $("#but-menu").click(function(){
+        $("#menu").slideToggle()
+    })
+        });
+    </script>
+
+
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="container">
+        <img src="img/20210128_203951.png" alt="BVM logo" id="logo">
+
+        <span id="but-menu" class="icon-menu"></span>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roleplay.html">Roleplay</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="https://youtu.be/lFtfYoQnz98" target="_blank">Download</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div id="banners">
+        <div class="container">
+        <ul id="slider">
+            <!--<li><img src="img/20210128_203901.jpg" alt="rolaplay 1"></li>-->
+            <li><img src="img/1625419346544.jpg" alt="Roleplay 2"></li>
+            <li><img src="img/1625419346544.jpg" alt="Last"></li>
+            <!--<li><img src="img/1625419338810.jpg" alt="Last rolaplay"></li>-->
+        </ul>
+    </div>
+</div>
+
+<section id="roleplay-text">
+    <div class="r-text">
+    <h1>O Melhor <span>Roleplay</span> Você Encontra Aqui!</h1>
+    <h5>Graças a nossa ótima administração, podemos afirmar com toda a certeza que aqui você encontrará um ótimo RP, criando e desenvolvendo sseu personsagem da forma que quiser! Esta é uma aba destinada a apresentação do site, por favor, selecione alguma opção do menu para progredir ou acesse nosso discord para informações mais completas.</h5>
+    <button><a href="https://discord.gg/3DcK8pRm">>DISCORD</button></a>
+</div>
+</section>
+
+<section id="conectar">
+    <div class="connect">
+    <h1>Locations:</h1><hr>
+    <h5>Nosso <span>IP</span>: bvmrp.phoenixhost.com.br:7777 <span>ou</span> 142.44.129.96:7777</h5>
+    <img src="img/bvm.PNG" alt="">
+    </div>
+
+</section>
+    
+
+<footer id="rodape">
+    <div class="container">
+       <!-- <ul>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>-->
+    <span>© Brasil Vida Moderna 2021/2021. Todos os Direitos Reservados.</span>
+</div>
+</footer>
+
+</body>
+</html>

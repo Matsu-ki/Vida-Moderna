@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon" href="img/20210128_203951.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="moderna/bxslider/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="moderna/bxslider/jquery.bxslider.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Brasil Vida Moderna</title>
+
+    <script>
+        $(document).ready(function(){
+        $('#slider').bxSlider({
+            auto: false,
+            controls: false,
+        });
+        
+    $("#but-menu").click(function(){
+        $("#menu").slideToggle()
+    })
+        });
+    </script>
+
+</head>
+<body id="body-p">
+    <header id="cabecalho">
+        <div class="container">
+        <img src="img/20210128_203951.png" alt="BVM logo" id="logo">
+
+        <span id="but-menu" class="icon-menu"></span>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roleplay.html">Roleplay</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="https://youtu.be/lFtfYoQnz98" target="_blank">Download</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div class="p-text">
+        <h1>Nossos <u><span>produtos</span></u></h1>
+    </div>
+
+    <div class="container-c" id="blur">
+        <div class="card">
+            <div class="content-c">
+                <h2>01</h2>
+                <h3>VIP <span class="ouro">Ouro</span></h3>
+                <p>Com o VIP Ouro é possível adquirir uma tag personalizada in game/discord, se destacando dos demais jogadores, mostrando que você é um apoiador do projeto.</p>
+                <br><p>(mais comprado)</p>
+                <a href="#" onclick="toggle()">Comprar</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="content-c">
+                <h2>02</h2>
+                <h3>VIP <span class="diamante">Diamante</span></h3>
+                <p>O VIP Diamante, por ser mais caro, possui todos os benefícios do VIP Ouro com outros benefícios adicionais.</p>
+                <a href="#" onclick="toggle()">Comprar</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="content-c">
+                <h2>03</h2>
+                <h3><span class="cash">Cash</span></h3>
+                <p>Caso queira, é possível comprar a quantidade de Cash desejada, podendo comprar qualquer tipo de VIP e ainda sobrar Cash para o próximo mês quando acabar.</p>
+                <a href="#" onclick="toggle()">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content-c">
+                <h2>04</h2>
+                <h3>Troca de <span class="nome">Nome</span></h3>
+                <p>Caso não esteja gostando do Roleplat do seu personsagem é possível comprar a troca de Nome, fazendo assim um CK, podendo iniciar outro tipo de RP para o seu personagem.</p>
+                <a href="#" onclick="toggle()">Comprar</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="content-c">
+                <h2>05</h2>
+                <h3><span class="desban">Desbanimento</span></h3>
+                <p>Fez alguma besteira? Não se preocupe, é possível pagar pelo nosso perdão a você. Este produto aplica-se ao <span class="discord">Discord</span> e também ao <span class="jogo">Jogo</span>.</p>
+                <a href="#" onclick="toggle()">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content-c">
+                <h2>06</h2>
+                <h3><span class="org">Organizações</span></h3>
+                <p>É possível comprar alguma Organização caso você tenha sido aprovado no teste. Com isso, você pode mudar o nome da Organização, alugar determinados armamentos e colocar portões em sua base.</p>
+                <a href="#" onclick="toggle()">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <!--<script>
+        VanillaTilt.init(document.querySelectorAll(".card")
+        ,{
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.3
+        });
+    </script>-->
+
+
+    <div id="popup">
+        <h1>Confirme sua compra</h1>
+        <p>Por favor, para prosseguir com sua compra de forma segura e confiável, peço que escolha uma dessas opções para falar com o vendedor.</p>
+        <a href="#" onclick="toggle()">Fechar</a>
+        <a href="https://discord.gg/3DcK8pRm" onclick="toggle()" style="background: rgb(117, 155, 206); color: white;" target="_blank">Discord</a>
+        <a href="https://web.whatsapp.com/send?phone=21968881768" onclick="toggle()" style="background: #34af23; color: white;" target="_blank">Whatsapp</a>
+    </div>
+    <script>
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+
+
+    <footer id="rodape">
+        <div class="container">
+        <span>© Brasil Vida Moderna 2021/2022. Todos os Direitos Reservados.</span>
+    </div>
+    </footer>
+    
+</body>
+</html>   
